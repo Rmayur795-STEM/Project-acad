@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Prep Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        header { text-align: center; padding: 20px; background-color: #0056b3; color: white; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; }
+        section { background-color: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #0056b3; }
+        .chatbot-container { border-top: 1px solid #eee; padding-top: 20px; }
+        .chatbot-input { width: 80%; padding: 10px; margin-right: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        .chatbot-button { padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .chatbot-response { margin-top: 10px; background-color: #e9ecef; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Prep Assistant</h1>
+        <nav>
+            <a href="#extracurriculars">Extracurriculars</a>
+            <a href="#resume-builder">Resume Builder</a>
+            <a href="#ai-chatbot">AI Chatbot</a>
+        </nav>
+    </header>
+
+    <section id="extracurriculars">
+        <h2>Extracurriculars & Volunteering Tracker</h2>
+        <p>Keep track of your activities and hours here. (This section would be dynamic with JavaScript/backend integration)</p>
+        <!-- Example: A form or list would go here -->
+        <div class="activity-list">
+            <h3>My Activities:</h3>
+            <ul>
+                <li>Volunteering at local hospital (100 hours)</li>
+                <li>Robotics Club (President, 50 hours/semester)</li>
+                <li>Debate Team (20 hours/semester)</li>
+            </ul>
+            <button>Add New Activity</button>
+        </div>
+    </section>
+
+    <section id="resume-builder">
+        <h2>Resume Builder</h2>
+        <p>Generate and tailor your resume for college applications. (This section would integrate with user data)</p>
+        <!-- Example: Resume generation tools/preview -->
+        <textarea style="width: 100%; height: 200px; margin-top: 10px;" placeholder="Your resume content will appear here..."></textarea>
+        <button>Preview Resume</button>
+        <button>Download PDF</button>
+    </section>
+
+    <section id="ai-chatbot">
+        <h2>AI Chatbot (Restricted Access)</h2>
+        <p>Ask the AI for advice on college applications, essays, or extracurriculars. Access is restricted to specific topics.</p>
+        <div class="chatbot-container">
+            <input type="text" class="chatbot-input" placeholder="Ask me a question...">
+            <button class="chatbot-button">Send</button>
+            <div class="chatbot-response">AI Response will appear here.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College Prep Assistant</p>
+    </footer>
+
+    <script>
+        // You would add JavaScript here for interactive elements and chatbot communication
+        // Example for chatbot:
+        // document.querySelector('.chatbot-button').addEventListener('click', async () => {
+        //     const input = document.querySelector('.chatbot-input').value;
+        //     const responseDiv = document.querySelector('.chatbot-response');
+        //     responseDiv.textContent = 'Thinking...';
+        //     // In a real app, this would make an API call to your Python backend
+        //     const backendResponse = await fetch('/api/chatbot', {
+        //         method: 'POST',
+        //         headers: { 'Content-Type': 'application/json' },
+        //         body: JSON.stringify({ query: input })
+        //     }).then(res => res.json());
+        //     responseDiv.textContent = backendResponse.answer;
+        // });
+    </script>
+</body>
+</html>
